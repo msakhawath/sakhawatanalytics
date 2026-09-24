@@ -1,0 +1,11 @@
+{
+  // Cloudflare Worker config. Tells Cloudflare "this project is just the
+  // files in ./public — serve them as a static site."
+  // You should never need to touch this file.
+  "name": "sakhawatanalytics",
+  "compatibility_date": "2026-09-24",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}
