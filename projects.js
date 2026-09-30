@@ -39,6 +39,15 @@ window.PROJECTS = [
   },
 
   {
+    title: "Hosting and mail migration — sakhawatanalytics.com",
+    track: "ops",
+    result: "Migrated off shared hosting with zero mail downtime · 10/10 deliverability",
+    body: "Moved a live domain from shared hosting to Cloudflare: nameserver cutover, full DNS rebuild, static hosting with Git-based CI/CD. Carried MX, SPF, DKIM and DMARC across by hand and diagnosed a DKIM failure caused by proxied CNAME records — the kind of fault that silently sends mail to spam while everything appears to work.",
+    stack: ["Cloudflare", "DNS", "SPF / DKIM / DMARC", "Git CI/CD"],
+    links: [{ label: "Live site", url: "https://sakhawatanalytics.com" }]
+  },
+
+  {
     title: "Self-hosted job-application pipeline",
     track: "both",
     result: "Two chained workflows running unattended on infrastructure I provision and maintain",
